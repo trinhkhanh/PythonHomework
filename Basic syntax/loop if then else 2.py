@@ -4,7 +4,7 @@ y =[]
 for i in x:
     if i%3 == 0:
 
-        print(y, ' ', end='')
+        print([i], ' ', end='')
 
 print()
 
