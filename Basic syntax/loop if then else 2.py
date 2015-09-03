@@ -1,13 +1,14 @@
 __author__ = 'trinhkhanh'
 x = [ i for i in range(1, 101)]
-y =[]
+y = []
+z = []
 for i in x:
     if i%3 == 0:
-
-        print([i], ' ', end='')
-
+        y.append(i)
+    elif i%5 == 0:
+        z.append(i)
+print(y)
 print()
+print(z)
 
-for i in x:
-    if i%5 == 0:
-        print([i], ' ', end='')
+
