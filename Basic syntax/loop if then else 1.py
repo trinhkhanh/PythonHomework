@@ -6,6 +6,7 @@ while True:
         for i in reversed(range(1, number+1)):
                 if i%2 != 0:
                     list = ''.join(map(str, [i]*i))
-                    print(list.center(number))
+
+                    print(list.center(number*len(str(number))))
     else:
         print("Sorry, the number you enter is even number")
