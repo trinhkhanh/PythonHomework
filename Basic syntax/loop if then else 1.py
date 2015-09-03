@@ -5,8 +5,7 @@ while True:
 
         for i in reversed(range(1, number+1)):
                 if i%2 != 0:
-
-                    print([i]*i, end=" ")
-                print()
+                    list = ''.join(map(str, [i]*i))
+                    print(list.center(number))
     else:
         print("Sorry, the number you enter is even number")
