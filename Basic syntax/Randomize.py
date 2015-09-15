@@ -2,11 +2,14 @@ __author__ = 'trinhkhanh'
 
 import random
 
-squad = [['q', 'w', 'e'], ['t', 'y', 'u','t1', 'y1', 'u1','y2', 'u2'], ['i', 'o', 'p', 'a', 'i1', 'o2', 'p3', 'a4'],['z', 'x', 'c', 'v', 'z1', 'x1', 'c1', 'v1']]
+squad = [['Marc-Andre ter Stegen', 'Claudio Bravo', 'Jordi Masip'],
+         ['Douglas',  'Gerard Pique', 'Daniel Alves', 'Marc Bartra, Jordi Alba', 'Adriano', 'Thomas Vermaelen', 'Jeremy Mathieu', 'Martin Montoya'],
+         ['Ivan Rakitic', 'Sergio Busquets', 'Andres Iniesta', 'Neymar', 'Rafinha', 'Javier Mascherano', 'Sergi Roberto', 'Denis Suarez'],
+         ['Luis Suarez', 'Lionel Messi', 'Sandro', 'Munir', 'Cristian Tello']]
 
-GK = random.sample(squad[0], 1)# GK: Goalkeeper
-DF1 = random.sample(squad[1], 4) # DF: defenders: centre-back, sweeper, full-back, and wing-back
-DF2 = random.sample(squad[2], 4)
-CF = random.sample(squad[3], 2) #CF: Center forward
+TM = random.sample(squad[0], 1)# TM: chon mot thu mon
+HV = random.sample(squad[1], 4) # HV: Hau ve chon 2 tru - 2 bien
+TV = random.sample(squad[2], 4) # TV: chon 4 tien ve
+TD = random.sample(squad[3], 2) #TD: chon 2 tien dao
 
-print('Doi hinh ra san gom: %s, %s, %s, %s'%(GK,DF1,DF2,CF))
+print('Doi hinh ra san gom: %s, %s, %s, %s'%(TM, HV, TV, TD))
