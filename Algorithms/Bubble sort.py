@@ -13,7 +13,7 @@ for i in range(0, len(randomList)- 1):
             randomList[i] = randomList[j]
             randomList[j] = temp
 
-print(randomList)
+print(randomList[::-1])
 
 
 
