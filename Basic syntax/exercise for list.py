@@ -1,13 +1,13 @@
 __author__ = 'trinhkhanh'
 
-fruits = ['Cam', 'Tao', 'Dua','Chanh', 'Dua', 'Cam', 'Oi', 'Cam', 'Tao', 'Chanh', 'Le', 'Nho']
+fruits = ['Cam', 'Tao', 'Dua', 'Dua', 'Cam', 'Oi', 'Cam', 'Tao', 'Chanh', 'Le', 'Nho']
 
 uniqueList = []
 
-for j in fruits:
-    l = fruits.count(j)
-    if l == 1:
-        uniqueList.append(j)
+for fruit in fruits:
+    if uniqueList.count(fruit) == 0:
+        uniqueList.append(fruit)
+
 print(uniqueList)
 
 
