@@ -18,7 +18,7 @@ def heSo(a, b, c):
             return None
 
 
-print(heSo(1, -6, 9))
+print(heSo(1, -6, 4))
 
 
 
