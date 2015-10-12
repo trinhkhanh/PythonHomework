@@ -23,7 +23,7 @@ class UseBMIClass:
 
 
 newBMI1 = UseBMIClass('Kim Yang', 18, 145, 70)
-newBMI2 = UseBMIClass('Susan King', 18, 215, 70)
+newBMI2 = UseBMIClass('Susan King',18, 215, 70)
 
 newBMI1.checkBMI()
 newBMI2.checkBMI()
