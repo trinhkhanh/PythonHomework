@@ -1,29 +1,37 @@
 __author__ = 'trinhkhanh'
-class UseBMIClass:
+class BMI:
 
     def __init__(self, name, age, weight, height):
         self.name = name
         self.age = age
         self.weight = weight
         self.height = height
-    def BMI(self):
+    def getBMI(self):
         return (self.weight * 0.45359237)/(self.height*0.0254)**2
 
-    def checkBMI(self):
-        if self.BMI() >= 18.5:
-            if self.BMI() < 25:
-                print('The BMI for {0} is {1:.2f} Normal'.format(self.name,self.BMI()))
+    def getstatus(self):
+        if self.getBMI() >= 18.5:
+            if self.getBMI() < 25:
+                print('{:.2f} Normal'.format(self.getBMI()))
             else:
-                if self.BMI() == 25 and self.BMI() < 30:
-                    print('The BMI for {0} is {1:.2f} overweight'.format(self.name,self.BMI()))
+                if self.getBMI() == 25 and self.getBMI() < 30:
+                    print('{:.2f} overweight'.format(self.getBMI()))
                 else:
-                    print('The BMI for {0} is {1:.2f} obese'.format(self.name,self.BMI()))
+                    print('{:.2f} obese'.format(self.getBMI()))
         else:
-            print('The BMI for {0} is {1:.2f} underweight'.format(self.name,self.BMI()))
+            print('{:.2f} underweight'.format(self.getBMI()))
+
+class UseBMIClass(BMI):
+    def display(self):
+        print('The BMI for ', self.name, 'is', self.getBMI(), ' ', self.getstatus())
 
 
-newBMI1 = UseBMIClass('Kim Yang', 18, 145, 70)
-newBMI2 = UseBMIClass('Susan King', 18, 215, 70)
+bmi1 = ('Kim Yang', 18, 145, 70)
+bmi2 = ('Susan King', 18, 215, 70)
 
-newBMI1.checkBMI()
-newBMI2.checkBMI()
+bmi1.display()
+
+
+
+
+
