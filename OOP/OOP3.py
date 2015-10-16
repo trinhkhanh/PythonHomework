@@ -23,18 +23,24 @@ class BMI:
 
 class UseBMIClass(BMI):
 
-    def __init__(self, name, age, weight, height):
-        BMI.__init__(self, name, age, weight, height)
+    def __init__(self, *args):
+        if len(args) == 3:
+            age = 20
+            BMI.__init__(self, args[0], age, args[1], args[2])
+        else:
+            BMI.__init__(self, args[0],args[1], args[2], args[3])
 
     def getUseBMIClass(self):
         print ('The BMI for' , self.name, 'is', self.getStatus())
 
 
-bmi1 = UseBMIClass('Kim Yang', 18, 145, 70)
-bmi2 = UseBMIClass('Susan King', 20, 215, 70)
 
+bmi1 = UseBMIClass('Kim Yang', 18, 145, 70)
 bmi1.getUseBMIClass()
+
+bmi2 = UseBMIClass('Susan King', 215, 70)
 bmi2.getUseBMIClass()
+
 
 
 
