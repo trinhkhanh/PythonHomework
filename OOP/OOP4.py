@@ -1,6 +1,6 @@
 __author__ = 'trinhkhanh'
 class BMI:
-    def __init__(self, name, weight, height, age=20):
+    def __init__(self, name, weight, height, age=20 ):
         self.name = str(name)
         self.age = int(age)
         self.weight = weight
@@ -26,7 +26,7 @@ class UseBMIClass(BMI):
         print ('The BMI for' , self.name, 'is', self.getStatus())
 
 
-bmi1 = UseBMIClass('Kim Yang', 18, 145, 70)
+bmi1 = UseBMIClass('Kim Yang', 145, 70, 18)
 bmi1.getUseBMIClass()
 
 bmi2 = UseBMIClass('Susan King', 215, 70)
