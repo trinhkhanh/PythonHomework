@@ -25,7 +25,13 @@ class Dog(Animal):
     def talk(self):
         return 'Gau'
 
-animals = [Tiger('Woof'), Elephant('A'), Cat('Meo'),Rabbit('eheh'),Dog('Gau')]
+tiger = Tiger('Tiger')
+elephant = Elephant('Elephant')
+cat = Cat('Cat')
+rabbit = Rabbit('Rabbit')
+dog = Dog('Dog')
+
+animals = [tiger, elephant, cat, rabbit, dog]
 
 for animal in animals:
     print(animal.name, 'keu la', animal.talk())
